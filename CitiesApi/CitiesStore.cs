@@ -7,6 +7,8 @@ namespace CitiesApi.Models
 {
 	public class CitiesStore
 	{
+		public static CitiesStore Current { get; } = new CitiesStore();
+
 		public List<Cities> Cities_ { get; set; }
 		public CitiesStore()
 		{
